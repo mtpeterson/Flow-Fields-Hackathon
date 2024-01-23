@@ -6,7 +6,8 @@ Credit to The Coding Train for the helpful guide found [here](https://www.youtub
 The entire project, along with pictures and videos, can be found on my [Behance](https://www.behance.net/gallery/185467187/Flow-Fields-Hackathon-Project).
 
 ## At a glance
-The flow field is created by simulating ten thousand particles moving across a field of vectors. The vectors are semi-randomly determined using a Perlin Noise function. As the simulation runs, the vectors slowly change using the third dimension of the noise function. A visualization of the vector field can be seen below:
+The flow field is created by simulating **ten thousand** particles moving across a field of vectors. The vectors are semi-randomly determined using a Perlin Noise function. As the simulation runs, the vectors slowly change using the third dimension of the noise function. A visualization of the vector field can be seen below.
 ![A visualization of the Perlin Noise vector field used for the particle simulation](./Vector-Field-Visualization.png)
 
+The particles are generated at random, and their movement is determined by the vectors. For each particle, the nearest vector is found and is used to calculate changes to the velocity of the particle. Each frame, a semi-transparent line is drawn between the particle and its previous position. The low opacity allows for a better visualization of the 10,000 particles, giving the result more depth and making the image seem to fade into existence. Seen below is a simulation run for a short time of around 30 seconds.
 ![A picture of one of the flow field simulations](./Flow-Field-White.png)
